@@ -367,12 +367,31 @@
 
         </div>
     </footer>
-    <div class="overlay is-hidden" data-modal>
-        <div class="modal ">
+    <div class="overlay " data-modal>
+        <div class="modal">
             <button type="button" class="close-botton" data-modal-close>
                 <svg class="close-icon">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg></button>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+
+                <span class="title-form">Name</span>
+                <input type="text" class="modal-input" name="user-name">
+
+                <span class="title-form">Phone</span>
+                <input type="text" class="modal-input" name="user-phone">
+
+                <span class="title-form">Email</span>
+                <input type="text" class="modal-input" name="user-email">
+
+                <span class="title-form">Comment</span>
+                <textarea name="user-coment" class="text-area" placeholder="Text input"></textarea>
+                <button type="submit" class=button-send>
+                    Send
+                </button>
+            </form>
+
         </div>
     </div>
     <script src="./JS/modal.js"></script>
