@@ -722,7 +722,7 @@ button:focus {
     background-color: rgba(17, 19, 25, 0.5);
     position: fixed;
     top: 0;
-    transition-property: opacity(0);
+    transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
     transition-delay: 0ms;
@@ -730,7 +730,7 @@ button:focus {
 }
 
 .overlay.is-hidden {
-    transition-property: opacity(100%);
+    transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
     transition-delay: 0ms;
@@ -802,7 +802,7 @@ button:focus {
     letter-spacing: 0.04em;
     color: #4D5AE5;
 
-    margin-bottom: 8px;
+
     width: 100%;
 
     padding: 8px 16px;
@@ -815,6 +815,7 @@ button:focus {
 }
 
 .input-wrap {
+    margin-bottom: 8px;
     position: relative;
 }
 
@@ -896,6 +897,7 @@ button:focus {
 }
 
 .button-send {
+    cursor: pointer;
     width: 169px;
     height: 56px;
     border-radius: 4px;
